@@ -1,23 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
+import { GetStaticProps } from 'next';
 import Layout, { siteTitle } from '@/components/layout';
 import DateUtil from '@/components/date';
 import { getSortedPostsData } from '@/lib/posts';
 import utilStyles from '@/styles/utils.module.css';
 import { PostType } from '@/types/post';
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
 export default function Home({ allPostsData }: {
-  allPostsData?: []
+  allPostsData?: PostType[]
 }) {
   return (
     <Layout home>
@@ -30,7 +22,7 @@ export default function Home({ allPostsData }: {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData && allPostsData.map((postData: PostType) => (
+          {allPostsData && allPostsData.map(postData => (
             <li className={utilStyles.listItem} key={postData.id}>
               <Link href={`/posts/${postData.id}`}>{postData.title}</Link>
               <br />
@@ -43,4 +35,13 @@ export default function Home({ allPostsData }: {
       </section>
     </Layout>
   )
+}
+
+export const getStaticProps: GetStaticProps = () => {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData
+    }
+  };
 }
