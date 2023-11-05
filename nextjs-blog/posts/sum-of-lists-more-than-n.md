@@ -4,7 +4,7 @@ date: '2023-10-26'
 ---
 
 
-![repeat_string_path](/nextjs-blog/public/images/sum-of-lists-more-than-n.png)
+![sum_of_lists_mort_than_n_path](/nextjs-blog/public/images/sum-of-lists-more-than-n.png)
 
 image 가 안나오지만 일단 미룰 수 없으므로 작성
 

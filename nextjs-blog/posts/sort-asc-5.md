@@ -4,7 +4,7 @@ date: '2023-10-26'
 ---
 
 
-![repeat_string_path](/nextjs-blog/public/images/sort-asc-5.png)
+![sort_asc_path](/nextjs-blog/public/images/sort-asc-5.png)
 
 image 가 안나오지만 일단 미룰 수 없으므로 작성
 
