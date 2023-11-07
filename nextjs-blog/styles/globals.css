@@ -25,3 +25,39 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.markdown-body pre code {
+  display: block;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+/* Java 코드 스타일 */
+.markdown-body pre code[class*="language-java"] {
+  color: #000;
+}
+
+/* 여기서 부터는 먹히지 않음 */
+/* Java 키워드 스타일 */
+.markdown-body pre code[class*="language-java"] .token.keyword {
+  color: #007400;
+}
+
+/* Java 문자열 스타일 */
+.markdown-body pre code[class*="language-java"] .token.string {
+  color: #032f62;
+}
+
+/* Java 주석 스타일 */
+.markdown-body pre code[class*="language-java"] .token.comment {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Java 숫자 스타일 */
+.markdown-body pre code[class*="language-java"] .token.number {
+  color: #098658;
+}

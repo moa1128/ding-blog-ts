@@ -21,7 +21,7 @@ export default function Post({ postData }: {
         </div>
         {
           postData?.contentHtml ? (
-            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <div className="markdown-body" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
           ) : ''
         }
       </article>
