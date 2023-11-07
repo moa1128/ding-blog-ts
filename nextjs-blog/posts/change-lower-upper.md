@@ -4,7 +4,7 @@ date: '2023-11-05'
 ---
 
 
-![change_lower_upper_path](/nextjs-blog/public/images/lower-upper.png)
+![change_lower_upper_path](/images/lower-upper.png)
 
 기존 풀이 (사실 처음에 못 품)
 ```java

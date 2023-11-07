@@ -4,7 +4,7 @@ date: '2023-10-26'
 ---
 
 
-![repeat_string_path](/nextjs-blog/public/images/repeat-string.png)
+![repeat_string_path](/images/repeat-string.png)
 
 image 가 안나오지만 일단 미룰 수 없으므로 작성
 

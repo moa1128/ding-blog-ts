@@ -4,7 +4,7 @@ date: '2023-11-05'
 ---
 
 
-![odd_even_sum_path](/nextjs-blog/public/images/odd-even-sum.png)
+![odd_even_sum_path](/images/odd-even-sum.png)
 
 기존 풀이
 ```java
