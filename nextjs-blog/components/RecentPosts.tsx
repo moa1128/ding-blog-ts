@@ -8,9 +8,9 @@ const RecentPosts = () => {
         <Link href="/" passHref>
           <div className="mt-5">
             <div className={"font-medium text-xl"}>
-              게시물 제목이 나타납니다.
+              게시물 제목
             </div>
-            <div className={"font-light"}>게시물 설명이 나타납니다.</div>
+            <div className={"font-light"}>게시물 설명</div>
           </div>
         </Link>
         <Link href="/" passHref>
